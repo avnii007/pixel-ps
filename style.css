@@ -1,0 +1,148 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #6366f1;
+}
+
+/* Container Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Search Hero Section */
+.search-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.search-section h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.search-section p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#search-input:focus {
+  border-color: #6366f1;
+}
+
+#search-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #4f46e5;
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #818cf8;
+}
+
+/* Responsive Results Grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Image Card Styling */
+.results-grid a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #475569;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #0f172a;
+}
+
+.card p {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+  word-break: break-word;
+}
