@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelPulse | Image Search</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Pixel Pulse</h1>
-    <h2>My first project</h2>
 
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="logo">Pixel<span>Pulse</span></div>
+  </header>
+
+  <main class="container">
+    <!-- Hero & Search Section -->
+    <section class="search-section">
+      <h1>Discover Free High-Res Images</h1>
+      <p>Search millions of public domain images from Wikimedia Commons.</p>
+
+      <!-- Search Form -->
+      <form id="search-form" class="search-form">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search images (e.g., ocean, mountains, cats)..." 
+          autocomplete="off" 
+          required 
+        />
+        <button type="submit" id="search-button">Search</button>
+      </form>
+      
+      <!-- Status/Result Count Message -->
+      <p id="status-message" class="status-message"></p>
+    </section>
+
+    <!-- Results Grid -->
+    <section class="results-section">
+      <div id="results" class="results-grid">
+        <!-- Image cards dynamically injected here by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
