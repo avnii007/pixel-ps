@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelPulse - Image Search</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Pixel Pulse</h1>
-    <h2>My first project</h2>
+  <div class="app-container">
+    <header>
+      <h1>PixelPulse</h1>
+      <p class="subtitle">Discover high-resolution images from Wikimedia Commons</p>
+    </header>
 
+    <main>
+      <!-- Search Input Section -->
+      <section class="search-section">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Try searching for cats, galaxy, or Paris..." 
+          aria-label="Search Images"
+        />
+        <button id="search-btn">Search</button>
+      </section>
+
+      <!-- Status & Feedback Area (Idle, Loading, Error, Empty messages appear here) -->
+      <div id="status" class="status-message" aria-live="polite">
+        Type a word and press Search to see images.
+      </div>
+
+      <!-- Results Display Grid -->
+      <section id="results" class="results-grid"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
